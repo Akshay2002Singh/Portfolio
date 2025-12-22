@@ -152,7 +152,9 @@
         <img src="./assets/img/about.jpg" alt="" class="about_img" data-tilt />
         <div class="about_data">
           <p class="about_description">
-            Hi! 👋 I’m Akshay Singh, a Full-Stack Developer with experience building web and mobile applications. I enjoy creating user-focused interfaces and developing reliable backend services. I’m driven by learning through real-world projects and collaborating to build impactful products.
+            Hi! 👋 I’m Akshay Singh, a Full-Stack Developer with experience building web and mobile applications. I
+            enjoy creating user-focused interfaces and developing reliable backend services. I’m driven by learning
+            through real-world projects and collaborating to build impactful products.
           </p>
           <div class="about_button">
             <a href="./assets/Akshay Singh.pdf" class="button button--flex" target="_blank" id="resume-button">
@@ -223,43 +225,12 @@
     </section>
 
 
-
     <!-- Portfolio -->
     <section class="portfolio section" id="projects">
       <h2 class="section_title">Projects</h2>
 
-
-      <!-- Frontend -->
-      <span class="section_subtitle">Frontend Projects</span>
-      <div class="portfolio_container container swiper-container swiper mySwiper">
-        <div class="swiper-wrapper" id="frontend-projects">
-          <!-- Dynamically populated -->
-        </div>
-        <div class="swiper-button-next"><i class="uil uil-angle-right-b swiper-portfolio-icon"></i></div>
-        <div class="swiper-button-prev"><i class="uil uil-angle-left-b swiper-portfolio-icon"></i></div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <!-- Backend -->
-      <span class="section_subtitle" style="margin-top: 70px;">Backend Projects</span>
-      <div class="portfolio_container container swiper-container swiper mySwiper">
-        <div class="swiper-wrapper" id="backend-projects">
-          <!-- Dynamically populated -->
-        </div>
-        <div class="swiper-button-next"><i class="uil uil-angle-right-b swiper-portfolio-icon"></i></div>
-        <div class="swiper-button-prev"><i class="uil uil-angle-left-b swiper-portfolio-icon"></i></div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <!-- Python -->
-      <span class="section_subtitle" style="margin-top: 70px;">Python Projects</span>
-      <div class="portfolio_container container swiper-container swiper mySwiper">
-        <div class="swiper-wrapper" id="python-projects">
-          <!-- Dynamically populated -->
-        </div>
-        <div class="swiper-button-next"><i class="uil uil-angle-right-b swiper-portfolio-icon"></i></div>
-        <div class="swiper-button-prev"><i class="uil uil-angle-left-b swiper-portfolio-icon"></i></div>
-        <div class="swiper-pagination"></div>
+      <div id="projects-container">
+        <!-- Dynamically populated -->
       </div>
     </section>
 
@@ -403,6 +374,12 @@
     <i class="uil uil-arrow-up scrollup_icon"></i>
   </a>
 
+
+  <!-- Image Popup Modal -->
+  <div id="image-modal" class="modal">
+    <span class="modal_close">&times;</span>
+    <img class="modal_content" id="modal-img">
+  </div>
 
   <!-- JQuery -->
   <script src="./assets/js/jquery.min.js"></script>

@@ -235,3 +235,29 @@ function initTyping() {
 
 initTyping();
 window.initTyping = initTyping;
+
+// IMAGE MODAL LOGIC
+const modal = document.getElementById("image-modal");
+const modalImg = document.getElementById("modal-img");
+const closeBtn = document.querySelector(".modal_close");
+
+// Event delegation for images
+document.addEventListener("click", (e) => {
+  const target = e.target;
+  // Only trigger for project and achievement images (both use .portfolio_img)
+  if (target.tagName === "IMG" && target.classList.contains("portfolio_img")) {
+    modal.style.display = "block";
+    modalImg.src = target.src;
+  }
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Close modal when clicking outside the image
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});

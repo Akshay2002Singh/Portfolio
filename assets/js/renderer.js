@@ -133,23 +133,20 @@ function renderWork() {
 }
 
 function renderProjects() {
-    // Frontend Projects
-    const frontendContainer = document.getElementById('frontend-projects');
-    if (frontendContainer) {
-        frontendContainer.innerHTML = projectsData.frontend.map(project => getProjectHTML(project)).join('');
-    }
+    const container = document.getElementById('projects-container');
+    if (!container) return;
 
-    // Backend Projects
-    const backendContainer = document.getElementById('backend-projects');
-    if (backendContainer) {
-        backendContainer.innerHTML = projectsData.backend.map(project => getProjectHTML(project)).join('');
-    }
-
-    // Python Projects
-    const pythonContainer = document.getElementById('python-projects');
-    if (pythonContainer) {
-        pythonContainer.innerHTML = projectsData.python.map(project => getProjectHTML(project)).join('');
-    }
+    container.innerHTML = projectsData.map((category, index) => `
+        <span class="section_subtitle" style="margin-top: ${index === 0 ? '0' : '70px'};">${category.title}</span>
+        <div class="portfolio_container container swiper-container swiper mySwiper">
+            <div class="swiper-wrapper">
+                ${category.projects.map(project => getProjectHTML(project)).join('')}
+            </div>
+            <div class="swiper-button-next"><i class="uil uil-angle-right-b swiper-portfolio-icon"></i></div>
+            <div class="swiper-button-prev"><i class="uil uil-angle-left-b swiper-portfolio-icon"></i></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    `).join('');
 }
 
 function getProjectHTML(project) {
