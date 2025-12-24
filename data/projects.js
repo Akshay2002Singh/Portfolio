@@ -109,4 +109,33 @@ export const projectsData = [
             }
         ]
     },
+    {
+        title: "AI/ML Projects",
+        projects: [
+            {
+                title: "GPT Interview Buddy",
+                description: "GPT Interview Buddy is an AI-powered desktop app for practicing job interviews with role-specific questions. It supports voice and text responses and provides instant feedback to help users improve.",
+                img: "./assets/img/projects/gptInterviewBuddy.jpg",
+                link: "https://github.com/Akshay2002Singh/GPT-Interview-Buddy"
+            },
+            {
+                title: "Mail Mentor",
+                description: "Mail Mentor is a learning assistant that helps users study consistently through daily emails. Users select what to learn, choose specific topics and a time slot, and receive one focused lesson per day directly in their inbox.",
+                img: "./assets/img/projects/mailMentor.jpg",
+                link: "https://rapidcoders.in/accounts/mail-mentor/"
+            },
+            {
+                title: "Crop Recommendation System",
+                description: "Crop Recommendation System is an ML-based application that suggests the most suitable crop using soil nutrients and environmental conditions like temperature, humidity, and rainfall.",
+                img: "./assets/img/projects/CRS.jpg",
+                link: "https://github.com/Akshay2002Singh/Crop-Recommendation-System"
+            },
+            {
+                title: "Travel.ai",
+                description: "Travel.ai is an AI-powered travel planner that helps users discover nearby attractions, generate day-wise travel itineraries within a budget, and explore destinations like a local with food, culture, and hidden spot recommendations.",
+                img: "./assets/img/projects/TraveAi.jpg",
+                link: "https://github.com/Akshay2002Singh/Travel.ai"
+            },
+        ]
+    },
 ];
